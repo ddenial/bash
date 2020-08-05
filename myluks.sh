@@ -39,7 +39,7 @@ _is_cmd "install"
 _trap_cleanup() {
 	echo "Oops! $(basename $(0)) ($$) has terminated."
 	echo "Cleaning temporary files..."
-	find "${CURRENT_DIR}" -type f -name "tmp_myluks.sh_*.mp4" -print -delete
+	find "${CURRENT_DIR}" -type f -name "tmp_myluks.sh_*" -print -delete
 	echo "Done"
 	exit 2
 }
